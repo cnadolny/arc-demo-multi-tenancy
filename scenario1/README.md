@@ -43,7 +43,7 @@ You will need...
   
     ```sh
     # Using az cli
-    az k8sconfiguration show -g $ARC_RG -c $CLUSTER_NAME -n $CLUSTER_NAME-base-config
+    az k8sconfiguration show -g $ARC_RG -c $CLUSTER_NAME -n $CLUSTER_NAME-base-config --cluster-type connectedCluster
 
     # Using kubectl
     kubectl get gitconfig $CLUSTER_NAME-base-config -n cluster
